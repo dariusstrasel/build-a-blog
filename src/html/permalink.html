@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {{ post.render() | safe }}
+    <form method="post">
+        <label>
+            <input type="submit" name="delete" value="delete">
+        </label>
+    </form>
+<div class="error">{{error}}</div>
+{%  endblock %}
