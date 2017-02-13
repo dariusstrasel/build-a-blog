@@ -1,2 +1,150 @@
 @import "reset";
 
+$color-sandy: rgb(230, 226, 175);
+$color-dark-sandy: rgb(167, 163, 126);
+$color-light-sandy: rgb(239, 236, 202);
+$color-blue: rgb(4, 99, 128);
+$color-grey: rgb(86, 86, 86);
+
+header {
+  background: $color-grey;
+}
+
+.post-header {
+  background: $color-dark-sandy;
+}
+
+.post {
+  background: $color-sandy;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0px 14px 24px -15px rgba(0,0,0,0.75);
+}
+
+a {
+  color: lighten($color-grey, 50);
+  text-decoration: none;
+}
+
+header {
+  padding: 1em;
+}
+
+header a {
+  padding: 2em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+.wrapper {
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #fff;
+  position: relative;
+  bottom: 100%;
+  background-size: 200%;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container .child {
+  flex-grow: 1;
+  margin: auto;
+}
+
+.column-nowrap {
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+
+.post > p h2 a {
+  color: #6dbdff;
+}
+
+p.post-date {
+  float: right;
+}
+
+.block {
+  padding-bottom: 1em;
+  margin-left: 1em;
+  min-width: 350px;
+  -webkit-flex: 1 1 300px;
+  flex: 1;
+}
+
+.row {
+  flex-flow: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+div.row {
+  padding-bottom: 1em;
+}
+
+div.post-header {
+  padding-bottom: 0;
+}
+
+section > div.container {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.no-wrap {
+  flex-flow: nowrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-space-between {
+  align-content: space-between;
+}
+
+.button {
+   border-top: 1px solid #96d1f8;
+   background: #475259;
+   background: -webkit-gradient(linear, left top, left bottom, from(#56646e), to(#475259));
+   background: -webkit-linear-gradient(top, #56646e, #475259);
+   background: -moz-linear-gradient(top, #56646e, #475259);
+   background: -ms-linear-gradient(top, #56646e, #475259);
+   background: -o-linear-gradient(top, #56646e, #475259);
+   padding: 16px 32px;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 19px;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+
+.button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }

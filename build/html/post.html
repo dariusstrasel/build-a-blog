@@ -1,11 +1,15 @@
 <div class="post">
-    <div class="post-heading">
-        <a href="{{ "/blog/%s" % p.key().id() }}" class="post-title">{{ p.subject }}</a>
-        <div class="post-date">
-            {{ p.created.strftime("%b %d, %Y")}}
+    <div class="post-header flex-container row align-space-between">
+        <div class="block child">
+            <h1><a href="{{ "/blog/%s" % p.key().id() }}" class="post-title">{{ p.subject }}</a></h1>
+        </div>
+        <div class="block child">
+            <p class="post-date">{{ p.created.strftime("%b %d, %Y")}}</p>
         </div>
     </div>
-    <div class="post-content">
-        {{ p._render_text | safe }}
+    <div class="flex-container row">
+        <div class="block">
+                <p class="post-content">{{ p._render_text | safe }}</p>
+            </div>
     </div>
 </div>

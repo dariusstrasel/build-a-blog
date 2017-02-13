@@ -3,16 +3,27 @@
 <head>
   <link type="text/css" rel="stylesheet" href="/build/css/main.css"/>
   <title>CS 253 Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
     <body>
-      <a href="/" class="main-title">
-        CS 253 Blog
-      </a>
-
-      <div id="content">
-      {% block content %}
-      {% endblock %}
-      </div>
+    <div class="wrapper">
+        <header class="flex-container space-between">
+            <h1><a href="/" class="main-title">Blog Title</a></h1>
+            <a class="button" href="./newpost">New Post</a>
+        </header>
+        <main>
+            <section class="flex-container">
+                <div class="container">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </section>
+        </main>
+        <footer class="flex-container">
+            <small>
+                Developed by <a href="#">Darius Strasel</a>
+            </small>
+        </footer>
+    </div>
     </body>
 </html>
-
