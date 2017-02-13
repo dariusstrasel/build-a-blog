@@ -88,7 +88,7 @@ class PostPage(Handler):
 
         if post and delete:
             post.delete()
-            self.redirect_to(BlogFront)
+            self.redirect("/")
         else:
             error = "Blah"
             self.render("permalink.html", post=post, error=error)
